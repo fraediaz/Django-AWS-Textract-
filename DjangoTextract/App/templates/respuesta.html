@@ -1,0 +1,34 @@
+{% extends '_.html' %}
+{% load static %}
+
+{% block _body %}
+  
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('{% static 'images/bg-01.jpg' %}');">
+        <div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+            <form class="login100-form validate-form flex-sb flex-w" method="POST" enctype="multipart/form-data">
+                <span class="login100-form-title p-b-53">
+                    AWS Textract
+                </span>
+                <div class="p-t-31 p-b-9">
+                    <img src="/static/media/{{img}}" alt="" width="400" height="400">
+                    <br>
+                    {{respuesta}}
+                </div>
+               
+
+                <div class="w-full text-center p-t-55">
+                    
+
+                    <a href="https://fraediaz.github.io" class="txt2 bo1">
+                        @fraediaz
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+      
+{% endblock _body %}
